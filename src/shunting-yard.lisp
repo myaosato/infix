@@ -72,7 +72,7 @@
 
 (defun pop-operator (in out ops)
   (step in
-        (cons (list (get-op (car ops)) (car out) (cadr out)) (cddr out))
+        (cons (list (get-op (car ops)) (cadr out) (car out)) (cddr out))
         (cdr ops)))
 
 (defun push-operator (in out ops)
