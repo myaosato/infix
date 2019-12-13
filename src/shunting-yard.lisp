@@ -1,4 +1,7 @@
-(defpackage :infix/shunting-yard (:use :cl) (:shadow :step) (:export :shunting-yard))
+(defpackage :infix/shunting-yard
+  (:use :cl)
+  (:shadow :step)
+  (:export :shunting-yard))
 (in-package :infix/shunting-yard)
 
 (defun shunting-yard (in)
