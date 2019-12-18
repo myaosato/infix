@@ -44,6 +44,8 @@
         (and (eq sym1 '+) (eq sym2 '/))
         (and (eq sym1 '-) (eq sym2 '*))
         (and (eq sym1 '-) (eq sym2 '/))
+        (and (eq sym1 '+) (eq sym2 'expt))
+        (and (eq sym1 '-) (eq sym2 'expt))
         (and (eq sym1 '*) (eq sym2 'expt))
         (and (eq sym1 '/) (eq sym2 'expt)))))
 
