@@ -1,7 +1,7 @@
-(defpackage :infix/test
+(defpackage :infix/tests/main
   (:use :cl :infix/infix)
   (:export :test))
-(in-package :infix/test)
+(in-package :infix/tests/main)
 
 (defmacro test-case (exp)
   `(format t "~A: ~A~%" (if ,exp "OK" "NG") ',exp))
